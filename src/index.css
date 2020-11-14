@@ -61,10 +61,16 @@ svg{
   position: relative;
 }
 .inside{
-
+height: 462.5%;;
 }
 .SunSet{
 
+}
+.link{
+  opacity:50%;
+}
+.link:hover {
+  opacity: 70%;
 }
 .parallax {
   perspective: 1px;
