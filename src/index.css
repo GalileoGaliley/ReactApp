@@ -10,6 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.row{
+  background-color: #fff;
+}
+.fii{
+  background-color: rgba(0, 0, 0, 0);
+}
 .Back{
   height: 100vh;
   width: 100vw;
@@ -74,7 +80,6 @@ height: 462.7%;
 }
 .parallax {
   perspective: 1px;
-
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -93,7 +98,6 @@ height: 462.7%;
   transform: translateZ(0) scale(1);
   bottom: 0;
   top:50%;
-  height: 100vh;
 }
 .parallaxLayerTwo {
   transform: translateZ(-1px) scale(2);
@@ -102,7 +106,7 @@ height: 462.7%;
 .parallaxLayerThree {
   transform: translateZ(-2px) scale(3);
   top: 0;
-  height: fit-content;
+  overflow: hidden;
   }
 
 .antiModal h1{

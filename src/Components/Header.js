@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import logo from './logo.png';
-import backLogo from './2_09.png';
+
 import {Navbar, Nav, Container,Modal, Form, Button, FormControl } from "react-bootstrap";
 import {Switch,BrowserRouter as Router,Route,Link} from "react-router-dom";
 import Footer from "./Footer";
@@ -13,21 +13,12 @@ import SunSet2 from "./Parallax/Sunset2.png";
 import SunSet3 from "./Parallax/Sunset3.png";
 import Forma from "../Pages/Forma";
 
-export default function Header () {
-    // constructor(props){
-    //     super(props)
-    //
-    //     this.state = {
-    //         vision: true
-    //     };
-    //     this.openModal = this.openModal.bind(this);
-    // }
-    // openModal(){
-    //     this.setState(state =>({
-    //         vision: !state.vision
-    //     }));
-    // }
 
+export default function Header (props) {
+    
+     function updateData (value) {
+        this.setState({ height: value })
+    };
     const [show, setShow] = useState(false);
     const openModal = () => setShow(true);
     const closeModal = () => setShow(false);
@@ -88,7 +79,7 @@ export default function Header () {
                             </div>
                             <div className={'parallaxLayer parallaxLayerOne'}>
                                 <img src={SunSet1} width={'100%'} className={'img-fluid SunSet'}/>
-                                <div className={'conc inside'}>
+                                <div id={'one'} className={'conc inside'}>
                                     <Container-fluid>
                                         <Router>
                                             <Switch>
@@ -97,19 +88,14 @@ export default function Header () {
                                             </Switch>
                                         </Router>
                                     </Container-fluid>
-                                    <Footer />
+                                        <Footer updateData={updateData} />
                                 </div>
                             </div>
                         </div>
 
                     </div>
 
-                <div id={'antiModal'} className={'antiModal'}>
-                    <img className={'text-center backLogo'} src={backLogo}  height='600' width='600' />
 
-                    <img id='image' className={'block-center image'} src={logo}  height='289.5' width='250'/>
-
-                </div>
                 </Container-fluid>
                 <Modal show={show} onHide={closeModal}>
                     <Modal.Header closeButton>
