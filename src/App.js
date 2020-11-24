@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
@@ -9,6 +9,7 @@ import logo2 from "./Components/logo2.png"
 
 
 function App() {
+    
   return (
       <>
           <div id={'antiModal'} className={'antiModal'}>

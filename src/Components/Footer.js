@@ -11,7 +11,7 @@ export default class Footer extends Component {
             let rect = foo.getBoundingClientRect();
             let top = rect.top + rect.height +'px';
 
-            one.style.height = top ;
+            one.style.height = 'calc(' + top + ' - 100vh)';
             console.log(rect.top + '/' + rect.height + '/' + window.pageYOffset)
         };
         setTimeout(definition,2000);
