@@ -68,14 +68,14 @@ height: 462.7%;
 
 }
 .link{
-  opacity:50%;
+  opacity:0.5;
   -webkit-transition: opacity 0.5s ease-out 0s;
   -moz-transition: opacity 0.5s ease-out 0s;
   -o-transition: opacity 0.5s ease-out 0s;
   transition: opacity 0.5s ease-out 0s;
 }
 .link:hover {
-  opacity: 100%;
+  opacity: 1;
 
 }
 .parallax {
