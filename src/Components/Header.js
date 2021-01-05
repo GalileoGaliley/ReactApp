@@ -35,8 +35,6 @@ export default function Header (props) {
                                         <Navbar.Brand href='/' >
                                             <img src={logo} height='56' width='50' className='d-inline-block align-top'/>
                                         </Navbar.Brand>
-                                        <Navbar.Toggle arial-controls='responsive-navbar-nav'/>
-                                        <Navbar.Collapse id='responsive-navbar-nav'>
                                             <Nav className={'m-auto'}>
                                                 <Nav.Link className={'link'} href={'/'}>
                                                     <svg width="1em" height="1em" viewBox="0 0 10 10"
@@ -67,8 +65,6 @@ export default function Header (props) {
                                                     </svg>
                                                 </Nav.Link>
                                             </Nav>
-
-                                        </Navbar.Collapse>
 
                                     </Container>
                                 </Navbar>
