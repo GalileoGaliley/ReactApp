@@ -15,7 +15,11 @@ export default class Forma extends Component {
 render() {
     const {name, number, email} = this.state;
     return(
+<<<<<<< HEAD
     <Form action='/index.html' method={'post'}>
+=======
+    <Form action={'/index.html'} method={'post'}>
+>>>>>>> 7c197b0d23dd9c42a6bdcd1eceb5c6378ef84e3d
         <Form.Group controlId>
             <Form.Label>Ваши имя и фамилия</Form.Label>
             <Form.Control name={'name'} value={name} onChange={this.entre} type={'text'}/>
