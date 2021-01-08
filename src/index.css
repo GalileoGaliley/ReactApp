@@ -29,7 +29,9 @@ body {
   border: none;
   outline: none !important;
 }
-
+.antiAntiModal{
+  display: none;
+}
 .antiModal{
 
   height: 100%;

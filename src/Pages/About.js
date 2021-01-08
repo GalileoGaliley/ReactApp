@@ -18,9 +18,18 @@ class About extends Component {
 
                     </div>
                     <div className={'col m-2 cont p-2'}>
-                        <h3>Мы - команда опытных разработчиков и дизайнеров.</h3>
-                        <h3>Наша цель - сделать так, что-бы после проделанной работы, заказчик сказал - <b>"Это прекрасно!"</b></h3>
+                        <h3>Мы - команда разработчиков и дизайнеров.</h3>
+                        <h3>Наша цель - сделать так, что-бы после проделанной работы заказчик остался доволен!</h3>
                         <h3></h3>
+                    </div>
+                </div>
+                <div className={'row m-0 conc'}>
+                    <div className={'col m-2 cont p-2'}>
+
+
+                    </div>
+                    <div className={'col-sm-1 m-2 cont squareOne'}>
+
                     </div>
                 </div>
                 <div className={'row'}>

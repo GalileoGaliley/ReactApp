@@ -3,8 +3,8 @@ import About from "./About";
 import Bolls from "./Bolls";
 
 
-class Home extends React.Component {
-    render() {
+function Home (){
+
         return (
             <>
                 <About/>
@@ -15,7 +15,6 @@ class Home extends React.Component {
 
             </>
         );
-    }
 }
 
 export default Home;
