@@ -83,6 +83,9 @@ export default function Header (props) {
                                                 <Route exact path={'/Blog'} component={Blog} />
                                             </Switch>
                                         </Router>
+                                        <div className={'row ender '}>
+                                            <button className={'btn btn-warning ml-auto mr-auto mt-5 mb-5'} onClick={openModal}><h1>Сделать заказ!</h1></button>
+                                        </div>
                                     </Container-fluid>
                                         <Footer updateData={updateData} />
                                 </div>
