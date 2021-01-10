@@ -9,6 +9,11 @@ function Home (){
         return (
             <>
                 <About/>
+                <div className={'headLine'}>
+                
+                <h1>Примеры!</h1>
+                <p>__________</p>
+                </div>
                 <CarouselBox />
 
 

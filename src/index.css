@@ -227,6 +227,18 @@ background-color: rgba(1000,1000,1000,0.7);
 .navbar-brand {
   position: absolute !important;
 }
+.carousel-caption {
+    position: absolute;
+    right: 55%;
+    top: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #80c0edfc;
+    text-align: center;
+    background-color: rgb(250,200,200,0.5);
+    left: 5%;
+}
 code {
 font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 monospace;
