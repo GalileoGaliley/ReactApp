@@ -228,16 +228,16 @@ background-color: rgba(1000,1000,1000,0.7);
   position: absolute !important;
 }
 .carousel-caption {
-    position: absolute;
-    right: 55%;
+
+    right: 55% !important;
     top: 5%;
-    z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #80c0edfc;
+    color: teal !important;
     text-align: center;
-    background-color: rgb(250,200,200,0.5);
-    left: 5%;
+    background-color: rgb(255,255,255,0.7);
+    left: 5% !important;
+  bottom: auto !important;
 }
 code {
 font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
