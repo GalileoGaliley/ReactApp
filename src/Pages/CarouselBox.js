@@ -9,7 +9,6 @@ export default function CarouselBox (){
 
     return(
         <>
-
         <Carousel>
             <Carousel.Item>
             <a href={'http://dariteradost.site'}>

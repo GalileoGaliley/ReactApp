@@ -9,12 +9,13 @@ import AntiModal from "./AntiModal";
 
 function App() {
 
-    const [show, setShow] = useState({display: 'block'});
-    const closeModal = () => setShow({display: 'none'});
-
+    const [state, setState] = useState('unReady');
+    const ready = () => setState('ready');
+    
+    setTimeout(ready, 8000);
         return (
             <>
-                <div onClick={closeModal} style={show}>
+                <div className={state}>
                     <AntiModal/>
                 </div>
                 <Header/>
