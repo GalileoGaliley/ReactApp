@@ -1,5 +1,6 @@
 import React, {Component, useState} from 'react';
 import logo from './logo.png';
+import logoSw from './logoSw.svg';
 
 import {Navbar, Nav, Container,Modal, Form, Button, FormControl } from "react-bootstrap";
 import {Switch,BrowserRouter as Router,Route,Link} from "react-router-dom";
@@ -15,10 +16,8 @@ import Forma from "../Pages/Forma";
 
 
 export default function Header (props) {
-    
-     function updateData (value) {
-        this.setState({ height: value })
-    };
+
+
     const [show, setShow] = useState(false);
     const openModal = () => setShow(true);
     const closeModal = () => setShow(false);
@@ -33,7 +32,8 @@ export default function Header (props) {
                                 <Navbar fixed="top" collapseOnSelect expand={'md'} variant={'dark'} bg={'dark'}>
                                     <Container>
                                         <Navbar.Brand href='/' >
-                                            <img src={logo} height='56' width='50' className='d-inline-block align-top'/>
+                                            <img src={logo} height = '67.2px'  width='60px' className='d-inline-block align-top'/>
+                                            <img src={logoSw}  width='100%' className=' logoSw'/>
                                         </Navbar.Brand>
                                             <Nav className={'m-auto'}>
                                                 <Nav.Link className={'link'} href={'/'}>
@@ -87,7 +87,7 @@ export default function Header (props) {
                                             <button className={'btn btn-warning ml-auto mr-auto mt-5 mb-5'} onClick={openModal}><h1>Сделать заказ!</h1></button>
                                         </div>
                                     </Container-fluid>
-                                        <Footer updateData={updateData} />
+                                        <Footer  />
                                 </div>
                             </div>
                         </div>

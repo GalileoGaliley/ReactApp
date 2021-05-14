@@ -7,7 +7,7 @@ export default class Forma extends Component {
         number:'',
         email:''
     }
-    
+
     entre = (event) =>{
         const {name, value} = event.target;
         this.setState({[name]:value})

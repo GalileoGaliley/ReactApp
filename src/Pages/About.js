@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Banners from "./Banners";
-
+import Sliderr from "./Sliderr";
 
 class About extends Component {
 
@@ -9,8 +9,8 @@ class About extends Component {
             <div>
                 <div className={'row'}>
                     <div className={'headLine'}>
-                        <h1>Немного о нас!</h1>
-                        <p>_____</p>
+                        <p>Немного о нас!</p>
+                        <h3>_____</h3>
                     </div>
                 </div>
                 <div className={'row m-0 conc'}>
@@ -34,14 +34,16 @@ class About extends Component {
                 </div>
                 <div className={'row'}>
                     <div className={'headLine'}>
-                        <h1>Технологии!</h1>
-                        <p>_____</p>
+                        <p>Что мы делаем?</p>
+                        <h3>_____</h3>
                     </div>
                 </div>
                 <div className={'row m-0'}>
                     <Banners />
                 </div>
+                <Sliderr />
             </div>
+
         );
     }
 }

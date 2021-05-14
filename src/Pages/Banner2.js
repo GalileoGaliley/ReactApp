@@ -7,14 +7,16 @@ function Banner2 () {
             <div className={'col-sm-6 m-auto cont idisnick rell'}>
 
                 <div className={'presentation'}>
+
                     <h2>
-                        Для создания логотипа, фирменного стиля и качественного макета сайта, наши дизайнеры используют:
+                        Для разработки мы используем очень полюбившийся нам набор технологий:
                     </h2>
                     <h3>
-                        -Adobe Illustrator, Figma и Corel - Для работы с векторной графикой.
+                        -html, CSS, Bootstrap, ReactJS,ReactNative, JavaScript, - Для создания красивых, гибких и удобных
+                        интерфейсов ваших веб и мобильных придожений и онлайн-сервисов.
                     </h3>
                     <h3>
-                        -Adobe Photoshop - для работы с растровой графикой.
+                        -NodeJS,mongoDB,ExpoGo и MySQL - Для того что-бы всё исправно работало там где никто не видит!
                     </h3>
                 </div>
             </div>

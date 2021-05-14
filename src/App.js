@@ -12,7 +12,7 @@ function App() {
     const [state, setState] = useState('unReady');
     const ready = () => setState('ready');
     
-    setTimeout(ready, 8000);
+    setTimeout(ready, 3000);
         return (
             <>
                 <div className={state}>

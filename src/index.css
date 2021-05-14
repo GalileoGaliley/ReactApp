@@ -10,6 +10,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media (max-width:1000px){
+  .logoSw{
+    display: none;
+  }
+}
 .row{
   background-color: #fff;
 }
@@ -62,7 +67,7 @@ svg{
   position: relative;
 }
 .inside{
-height: 462.7%;
+
 }
 .SunSet{
 
@@ -124,6 +129,9 @@ height: 462.7%;
   margin-top: 5vh;
   text-align: center;
 }
+.headLine p{
+  font-size: 50pt;
+}
 .bolls {
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,6 +161,16 @@ button{
   font-family: Arial;
   margin: 5px;
 }
+.list{
+  list-style: none;
+  flex-direction: row;
+  position: relative;
+}
+.svgInList{
+  position: absolute;
+  float: left;
+  left:-60px;
+}
 .squareOne{
   background-color: #F3A505;
 }
@@ -169,20 +187,33 @@ top: calc(50% - 141.2px);
 color: #8f000c;
 border-color: #8f000c;
 }
+.rowPackage{
+  padding: 20px;
+}
 .package{
-  background-color: rgb(250,250,250,0.5);
-  width:300px;
-  height: 400px;
+  background-color: rgb(250,250,250,0.8);
+  width:250px;
   margin: auto;
+  margin-top: 10px;
   padding: 5px;
   text-align: center;
+  border-radius: 5px;
 
 }
-.packageH{
-  line-height: 10px;
+.package{
+  font-family: unset;
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.package:hover{
+  transform: scale(1.1);
 }
 .packageImage{
-  height: 100%;
   width: 100%;
 
 }
@@ -270,4 +301,13 @@ transform: rotate(0deg);
 100% {
 transform: rotate(360deg);
 }
+}
+@keyframes packageHover {
+  0% {
+    width: 250px;
+  }
+  100% {
+    width: 270px;
+
+  }
 }
