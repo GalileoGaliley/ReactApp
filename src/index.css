@@ -15,6 +15,13 @@ body {
     display: none;
   }
 }
+.contents{
+  display: contents !important;
+
+}
+.logoSw{
+  margin-left: 10px;
+}
 .row{
   background-color: #fff;
 }

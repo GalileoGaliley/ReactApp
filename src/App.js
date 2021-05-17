@@ -11,7 +11,7 @@ function App() {
 
     const [state, setState] = useState('unReady');
     const ready = () => setState('ready');
-    
+
     setTimeout(ready, 3000);
         return (
             <>
