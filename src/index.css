@@ -51,6 +51,11 @@ body {
     display: none;
   }
 }
+@media (max-width:780px){
+  .navLinks{
+    width:77%!important;
+  }
+}
 @font-face {
   font-family: 'NeutralFace';
   src: url('./fonts/NeutralFace.otf');
