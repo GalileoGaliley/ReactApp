@@ -7,11 +7,11 @@ function Banner1 (){
         <div className={'row m-0 conc '}>
             <div className={'col-sm-6 m-auto cont rell'}>
                 <div className={'presentation'}>
-                <h2>
+                <h4>
                 Мы делаем нетривиальные, персонализированные интерфейсы,
                 мобильные и веб-приложения с продуманным
                 взаимодействием, никаких шаблонов и готовых
-                решений!</h2>
+                решений!</h4>
                 </div>
             </div>
         </div>

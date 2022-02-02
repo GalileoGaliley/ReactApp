@@ -1,36 +1,44 @@
 import {Form} from "react-bootstrap";
 import React, {Component} from "react";
+import {sendMail} from "../http/mailApi";
 
 export default class Forma extends Component {
     state = {
         name:'',
         number:'',
-        email:''
+        email:'',
+        comment:''
     }
 
-    entre = (event) =>{
-        const {name, value} = event.target;
-        this.setState({[name]:value})
-    }
 render() {
-    const {name, number, email} = this.state;
     return(
-    <Form action={'/index.html'} method={'post'}>
-        <Form.Group controlId>
-            <Form.Label>Ваши имя и фамилия</Form.Label>
-            <Form.Control name={'name'} value={name} onChange={this.entre} type={'text'}/>
-        </Form.Group>
-        <Form.Group controlId>
-            <Form.Label>Ваш номер телефона</Form.Label>
-            <Form.Control name={'number'} value={number} onChange={this.entre} type={'tel'}/>
-        </Form.Group>
-        <Form.Group controlId>
-            <Form.Label>Ваш e-mail</Form.Label>
-            <Form.Control name={'email'} value={email} onChange={this.entre} type={'email'}/>
-        </Form.Group>
-        <button type={'submit'} formMethod={'post'} className={'btn btn-warning ml-auto mr-auto mt-5 mb-5'}>Отправить!
-        </button>
-    </Form>
+        <>
+            <div className={'w-100 d-flex align-items-center flex-column'}>
+                <div className={'d-flex w-100 justify-content-between mt-3 color-label-input align-items-center'}>
+                    <h5>Ваше имя:</h5>
+                    <input type={'text'} onChange={(event)=>{this.state.name = event.target.value}}/>
+                </div>
+                <div className={'d-flex w-100 justify-content-between mt-3 color-label-input align-items-center'}>
+                    <h5>Номер телефона:</h5>
+                    <input type={'num'} onChange={(event)=>{this.state.number = event.target.value}}/>
+                </div>
+                <div className={'d-flex w-100 justify-content-between mt-3 color-label-input align-items-center'}>
+                    <h5>Ваша почта:</h5>
+                    <input type={'email'} onChange={(event)=>{this.state.email = event.target.value}}/>
+                </div>
+                <div className={'d-flex w-100 justify-content-between mt-3 color-label-input align-items-center'}>
+                    <h5>Коментарий:</h5>
+                    <textarea onChange={(event)=>{this.state.comment = event.target.value}}></textarea>
+                </div>
+                <button className={'btn btn-warning mt-3'} onClick={()=> {
+                    sendMail(this.state);
+                    this.props.call();
+                }}>Отправить!</button>
+            </div>
+
+        </>
+
+
     )
 }
 

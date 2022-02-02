@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  overflow: hidden;
   /*background: linear-gradient(to top,#e35200,#f6d960);*/
   /*background-repeat: no-repeat;*/
 
@@ -10,14 +9,98 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media (max-width:1000px){
+@media (max-width:1300px){
   .logoSw{
     display: none;
   }
+
+}
+@media (max-width:800px){
+
+  .buttonLink div{
+    display: none;
+  }
+  .buttonLink{
+    background-color: rgba(0,0,0,0)!important;
+    border: none!important;
+  }
+  .OpenModalOne{
+    width: auto !important;
+    min-width: 30px;
+    margin: 0px!important;
+  }
+  .navLinks{
+    justify-content: center!important;
+  }
+}
+
+@media (max-width:1000px){
+  .buttonLink{
+    flex-direction: column!important;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+
+}
+@media (max-width:900px){
+  .package{
+    width: 90%!important;
+    height: 90vw!important;
+  }
+  .dataInInfo{
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'NeutralFace';
+  src: url('./fonts/NeutralFace.otf');
+}
+@font-face {
+  font-family: 'KarloCham-Brush';
+  src: url('./fonts/KarloCham-Brush.otf');
+}
+@font-face {
+  font-family: 'KarloCham-Line';
+  src: url('./fonts/KarloCham-Line.otf');
 }
 .contents{
   display: contents !important;
 
+}
+ul .list{
+  transform: translateX(-1400px);
+}
+.li1{
+  animation-name: translateToZeroInX;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.li2{
+  animation-name: translateToZeroInX;
+  animation-iteration-count: 1;
+  animation-delay: 6s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.li3{
+  animation-name: translateToZeroInX;
+  animation-iteration-count: 1;
+  animation-delay: 7s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.li4{
+  animation-name: translateToZeroInX;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 .logoSw{
   margin-left: 10px;
@@ -37,13 +120,31 @@ body {
   left: 0;
 }
 .OpenModalOne{
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0,0,0,0);
   border: none;
   outline: none !important;
+  width: 240px;
+}
+.buttonLink{
+  background-color: #ff5900;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 1px solid #ff5900;
+  width: 100%;
+  font-family: NeutralFace;
+}
+.buttonLink div{
+  margin: 3%;
+
 }
 
-.antiModal{
+.buttonLink svg{
+  margin: 2%;
 
+}
+.antiModal{
   height: 100%;
   width: 100%;
   position: fixed;
@@ -64,8 +165,36 @@ svg{
   background-color: #4d4d4d !important;
 
 }
+.navLinks{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.aboutUs{
+    background-image: url(/static/media/dev.f49bef41.jpeg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+}
+.blog{
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #2b2b2b;
+  font-family: NeutralFace;
+}
+.blog-disc{
+  width: 90%;
+  margin: auto;
+}
+.row{
+  background-color: rgba(255, 0, 0, 0);
+}
 .conc{
-  background-color: #fff;
   width: 100%;
   max-width:100vw;
 
@@ -79,6 +208,13 @@ svg{
 .SunSet{
 
 }
+body::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+body { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+body { overflow: -moz-scrollbars-none; }
 .link{
   opacity:0.5 !important;
   -webkit-transition: opacity 0.5s ease-out 0s;
@@ -119,6 +255,7 @@ svg{
 .parallaxLayerThree {
   transform: translateZ(-2px) scale(3);
   top: 0;
+  left: -20px;
   overflow: hidden;
   min-height: 100vh;
   }
@@ -130,14 +267,23 @@ svg{
   margin-top: 43%;
 }
 .headLine{
-  color: #4d4d4d;
-  font-family: Arial;
+  color: #fff;
+  background-color: #4d4d4d;
+  font-family: 'NeutralFace';
   margin: 0 auto;
   margin-top: 5vh;
   text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
 }
 .headLine p{
-  font-size: 50pt;
+  font-size: 20pt;
+  margin: 0;
+}
+.textAbout{
+  font-style: italic;
 }
 .bolls {
   background-repeat: no-repeat;
@@ -162,11 +308,20 @@ svg{
 button{
   color:#FFF !important;
 }
+
+.imageBack{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
 .cont{
-  background-color: ThreeDHighlight;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #4d4d4d;
   font-family: Arial;
   margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .list{
   list-style: none;
@@ -177,6 +332,13 @@ button{
   position: absolute;
   float: left;
   left:-60px;
+}
+.list h2{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.list h3{
+  line-height: 2;
 }
 .squareOne{
   background-color: #F3A505;
@@ -205,34 +367,162 @@ border-color: #8f000c;
   padding: 5px;
   text-align: center;
   border-radius: 5px;
-
+  position: relative;
+  padding: 0px;
+  margin-bottom: 50px;
 }
+.imagesNum{
+  width: 30%;
+  opacity: 0.3;
+}
+.blogProd{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.stage{
+  width: 90%;
+  min-width: 400px;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.infoInSun{
+  width: 100%;
+  height: 10vw;
+  position: absolute;
+  top: -20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  animation-name: transformInSun;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.dataInInfo{
+  font-size: 30pt;
+  color: #FFFFFF;
+  font-family: KarloCham-Line;
+  width: 30%;
+  text-align: center;
+}
+.spanInData1{
+  color: #2b2b2b;
+}
+.spanInData2{
+  color: #000000;
+}
+.textStage{
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.textStage p{
+  font-size: 16px;
+}
+.color-label-input{
+  color: #6b6b6b;
+}
+.slick-next{
+  right: 20px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.slick-prev{
+  left: 0px !important;
+  z-index: 99;
+  width: 40px !important;
+  height: 40px !important;
+}
+.slick-prev:before, .slick-next:before{
+  font-size: 40px!important;
+}
+.package h2{
+  margin-top: 30px;
+  font-family: NeutralFace;
+}
+.package h3{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #f5f5f5;
+  padding: 5px;
+  color: #2c2c2c;
+}
+
+.slik{
+  background-color: rgb(255, 255, 255);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nash{
+    background-color: rgb(68, 68, 68);
+    text-align: center;
+    margin: 0;
+    font-family: 'NeutralFace';
+    color: #fff;
+    padding-top: 50px;
+}
+.discriptionWare{
+  width: 100%;
+  bottom: 0px;
+  border-radius: 5px;
+  font-size: large;
+  font-family: arial;
+  opacity: 1;
+  font-family: NeutralFace;
+
+  }
+
 .package{
   font-family: unset;
-  margin: auto;
-  width: 300px;
-  height: 500px;
+  margin-top: 50px;
+  width: 40%;
+  height: 50vw;
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+  animation-name: packageDisHover;
+  animation-duration: 1s;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .package:hover{
   transform: scale(1.1);
+  -webkit-box-shadow: 10px 10px 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .packageImage{
-  width: 100%;
-
+  width: 60%;
+  bottom: 0px;
+  left: 22%;
 }
 .backLogo{
-position: fixed;
-left: calc(50% - 300px);
-top: calc(50% - 300px);
+  position: fixed;
+  left: calc(50% - 300px);
+  top: calc(50% - 300px);
 
-animation-name: spinnn;
-animation-duration:20s ;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
+  animation-name: spinnn;
+  animation-duration:20s ;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .ready{
   display: none;
@@ -241,6 +531,7 @@ animation-timing-function: linear;
   color: orange !important;
 }
 .footer{
+  height: 100vh;
   background-color: #2d3246;
   color: #fff !important;
 }
@@ -318,3 +609,30 @@ transform: rotate(360deg);
 
   }
 }
+@keyframes packageDisHover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+  }
+}
+@keyframes transformInSun {
+  0% {
+    top: -20px;
+  }
+  100% {
+    top: 180px;
+  }
+}
+@keyframes translateToZeroInX {
+  0% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+

@@ -23,7 +23,7 @@ class Banners extends React.Component {
             return (
                 <>
                     <Banner1/>
-                    <button className={'btn btn-warning ml-auto mr-auto mt-5 mb-5'} onClick={this.readClick}><h1>Ещё!</h1></button>
+                    <button className={'btn btn-warning ml-auto mr-auto mt-5 mb-5'} onClick={this.readClick}><h2>Ещё!</h2></button>
                 </>
             )
         }
@@ -31,7 +31,7 @@ class Banners extends React.Component {
             return (
                 <>
                     <Banner2/>
-                    <button className={'btn btn-warning ml-auto mr-auto mt-5 mb-5'} onClick={this.readClick}><h1>Ещё!</h1></button>
+                    <button className={'btn btn-warning ml-auto mr-auto mt-5 mb-5'} onClick={this.readClick}><h2>Ещё!</h2></button>
                 </>
             )
         }
